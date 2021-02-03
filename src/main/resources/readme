@@ -1,0 +1,9 @@
+для запуска приложения необходимо наличие JVM, которая входит в комплект JDK
+(скачать можно по ссылке https://www.oracle.com/ru/java/technologies/javase/javase-jdk8-downloads.html)
+
+запуск производиться через открыть с помощью->Java(TM) Platform SE binary или через командную строку c помощью команды
+java -jar <абсолютный путь до jar-файла>/<полное имя jar-файла>
+пример:
+java -jar C:\Users\SomeBody\Desktop\Lighting-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+для конфигурации пространства необходимо отредактировать файл AreaConfig.xml в корне jar-файла (открыть который можно с помощью WinRAR)

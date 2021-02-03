@@ -1,0 +1,82 @@
+<!--конфигурация пространства-->
+<areaConfig>
+    <!--ширина-->
+    <width>5</width>
+    <!--высота-->
+    <height>10</height>
+    <!--глубина-->
+    <depth>15</depth>
+    <!--шаг вычисления кол-ва излучения-->
+    <step>0.25</step>
+    <!--относительные значения кол-ва излучния на графнице перехода из которых будет построена плоскость-->
+    <boundaryValues>1</boundaryValues>
+    <boundaryValues>0.9</boundaryValues>
+    <boundaryValues>0.8</boundaryValues>
+    <boundaryValues>0.7</boundaryValues>
+    <boundaryValues>0.6</boundaryValues>
+    <boundaryValues>0.5</boundaryValues>
+    <boundaryValues>0.4</boundaryValues>
+    <boundaryValues>0.3</boundaryValues>
+    <boundaryValues>0.2</boundaryValues>
+    <boundaryValues>0.1</boundaryValues>
+    <!--конфигурация источника излучния, для добавления нового источника необходимо продублировать конструкцию и ввести необходимые параметры-->
+    <lamps>
+        <!--расположение x,y,z-->
+        <x>-2</x>
+        <y>0.02</y>
+        <z>2</z>
+        <!--радиус источника излучения-->
+        <r>1</r>
+        <!--члены функции убывания излучения источиника заданные коэффициентом и степень (coefficient * lengthToLamp ^ power) + ...-->
+        <terms>
+            <coefficient>1</coefficient>
+            <power>-3</power>
+        </terms>
+        <terms>
+            <coefficient>1</coefficient>
+            <power>-2</power>
+        </terms>
+    </lamps>
+    <lamps>
+        <x>0</x>
+        <y>0.02</y>
+        <z>2</z>
+        <r>1</r>
+        <terms>
+            <coefficient>1</coefficient>
+            <power>-3</power>
+        </terms>
+        <terms>
+            <coefficient>1</coefficient>
+            <power>-2</power>
+        </terms>
+    </lamps>
+    <lamps>
+        <x>2</x>
+        <y>0.02</y>
+        <z>2</z>
+        <r>2</r>
+        <terms>
+            <coefficient>1</coefficient>
+            <power>-3</power>
+        </terms>
+        <terms>
+            <coefficient>1</coefficient>
+            <power>-2</power>
+        </terms>
+    </lamps>
+    <lamps>
+        <x>2</x>
+        <y>0.02</y>
+        <z>0</z>
+        <r>2</r>
+        <terms>
+            <coefficient>1</coefficient>
+            <power>-3</power>
+        </terms>
+        <terms>
+            <coefficient>1</coefficient>
+            <power>-2</power>
+        </terms>
+    </lamps>
+</areaConfig>
